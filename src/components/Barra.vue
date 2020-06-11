@@ -3,6 +3,7 @@
         <div class="barra">
             <div class="container">
                 <router-link to="/">Portada</router-link>
+                <a @click="volver">VOLVER</a>
             </div>
         </div>
     </div>
@@ -10,7 +11,13 @@
 
 <script>
 export default {
-    name: 'Barra'
+    name: 'Barra',
+
+    methods:{
+        volver(){
+            this.$router.go(-1)
+        }
+    }
 }
 </script>
 
@@ -42,6 +49,12 @@ export default {
              color: #fff;
              text-decoration: none;
              padding: 0 10px;
+             cursor: pointer;
+             transition: all .5s ease;
+         }
+
+         a:hover{
+             color: rgba(146, 124, 0, 0.822);
          }
      }
  }

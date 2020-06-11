@@ -44,6 +44,7 @@
         </ul>
     </div>
     </div> 
+     <button @click="volver">Volver</button>
     </div>
 </template>
 
@@ -100,6 +101,10 @@ export default {
     methods:{
         imagePath(producto){
             return require(`../assets/img/${producto.img[0]}`);
+        },
+
+        volver(){
+            this.$router.go(-1)
         }
     }
 }
@@ -130,7 +135,7 @@ export default {
               a{
                   text-decoration: none;
               }
-              
+
               li{
                   font-family: 'Noto Sans', sans-serif;
                   font-size: 12px;
@@ -148,6 +153,18 @@ export default {
               }
           }
       }
+  }
+
+  button{
+      font-family: 'Noto Sans', sans-serif;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      background-color: black;
+      color: #fff;
+      padding: 12px 25px;
+      border: none;
+      margin-bottom: 100px;
   }
 
   @media only screen and (min-width: 768px)  {
