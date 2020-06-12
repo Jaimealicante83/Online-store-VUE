@@ -1,19 +1,14 @@
 <template>
-
- 
-<div>
+  <div>
     <Barra />
     <ul>
       <li>pagina about</li>
     </ul>
-</div>
-
+  </div>
 </template>
 
 <script>
-
-import Barra from '@/components/Barra.vue';
-
+import Barra from "@/components/Barra.vue";
 
 export default {
   name: "About",
@@ -24,12 +19,10 @@ export default {
 </script>
 
 <style lang="scss">
-.container{
-  p{
+.container {
+  p {
     color: blue;
     font-size: 100px;
   }
-
 }
-
 </style>

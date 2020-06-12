@@ -5,8 +5,7 @@
 </template>
 
 <style lang="scss">
-
-body{
+body {
   margin: 0 auto;
 }
 
