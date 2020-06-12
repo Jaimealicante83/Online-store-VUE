@@ -100,7 +100,7 @@ export default {
 
     methods:{
         imagePath(producto){
-            return require(`../assets/img/${producto.img[0]}`);
+            return require(`../assets/img/${producto.img[0]}`); 
         },
 
         volver(){
